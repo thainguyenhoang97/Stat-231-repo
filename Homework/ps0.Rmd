@@ -189,9 +189,9 @@ datasaurus_dozen %>%
   print(13)
 ```
 
-What do you notice?  Is the correlation coefficiant an appropriate summary for any of these datasets?  Why or why not?
+What do you notice?  Is the correlation coefficient an appropriate summary for any of these datasets?  Why or why not?
 
-> RESPONSE:
+> RESPONSE: Once again, the correlation coefficient between x and y from all the different data sets are very close to one another, but are not an appropriate summary of these datasets as the plots show that these graphs don't really have a linear relationship between x and y but rather just plot points for a shape of some sort.
 
 
 *You should pause again, commit changes with the commit message "Added answer for Ex 5", and push.*
