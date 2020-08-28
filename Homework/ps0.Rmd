@@ -122,7 +122,7 @@ Calculate the correlation coefficient between `x` vs. `y` for the `star` dataset
 star_data <- datasaurus_dozen %>%
   filter(dataset == "star")
 
-# Calculate a summary statistic that we call `r` equal to the correlation coefficient between `x` and `y` for the `dino` dataset 
+# Calculate a summary statistic that we call `r` equal to the correlation coefficient between `x` and `y` for the `star` dataset 
 star_data %>%
   summarize(r = cor(x, y))
 ```
@@ -144,18 +144,25 @@ ggplot(data = star_data, mapping = aes(x = x, y = y)) +
 
 Calculate the correlation coefficient between `x` vs. `y` for the `circle` dataset. You can (and should) reuse code we introduced above, just replace the dataset name with the desired dataset. How does this value compare to the correlation coefficients from the other two datasets?
 
-> RESPONSE: 
+> RESPONSE: The correlation coefficient is -0.06834336, once again very similar to that of the two previous exercises. 
 
 ```{r}
+# Start with the `datasaurus_dozen` and pipe it into the `filter` function to filter for observations where `dataset == "circle"`. Store the resulting filtered data frame as a new data frame called `circle_data`.
+circle_data <- datasaurus_dozen %>%
+  filter(dataset == "circle")
 
+# Calculate a summary statistic that we call `r` equal to the correlation coefficient between `x` and `y` for the `circle` dataset 
+circle_data %>%
+  summarize(r = cor(x, y))
 ```
 
 Then, plot `y` versus `x` for the `circle` dataset.  Does the plot look the same as either plot from the other two datasets?
 
-> RESPONSE:
+> RESPONSE: The plot doesn't look similar to the other 2 datasets, but it draws a circle. I however saw 3 points that lie rather out of the circumference. 
 
 ```{r}
-
+ggplot(data = circle_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
 *You should pause again, commit changes with the commit message "Added answer for Ex 4", and push.*
