@@ -82,7 +82,7 @@ datasaurus_dozen %>%
 
 Calculate the correlation coefficient between `x` and `y` for the `dino` dataset.  Below is the code you will need to complete this exercise. Basically, the answer is already given, but you need to include relevant bits in your Rmd document and successfully knit it and view the results.  What does this correlation coefficient imply about the relationship between `x` and `y` in the `dino` dataset? 
 
-> RESPONSE: 
+> RESPONSE: The correlation coefficient is -0.06447185. This tells me that x and y has a negative correlation in the dataset, and to be precise, a 1 unit increase of x leads to a 0.06447185 unit decrease of y.
  
 ```{r}
 # Start with the `datasaurus_dozen` and pipe it into the `filter` function to filter for observations where `dataset == "dino"`. Store the resulting filtered data frame as a new data frame called `dino_data`.
@@ -101,7 +101,7 @@ If this seems like a lot, don't worry.  You will learn about the philosophy of b
 
 What do you notice now about the relationship between x and y?
 
-> RESPONSE:
+> RESPONSE:It seems like x and y combines to give a plot of a dinosaur...
 
 ```{r fig.fullwidth=TRUE}
 ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
