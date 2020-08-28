@@ -115,18 +115,25 @@ ggplot(data = dino_data, mapping = aes(x = x, y = y)) +
 
 Calculate the correlation coefficient between `x` vs. `y` for the `star` dataset. You can (and should) reuse code we introduced above, just replace the dataset name with the desired dataset. How does this value compare to the correlation coefficient from the `dino` dataset?
 
-> RESPONSE: 
+> RESPONSE: The correlation coefficient is -0.0629611, which is almost the same as that from the 'dino' dataset.
 
 ```{r}
+# Start with the `datasaurus_dozen` and pipe it into the `filter` function to filter for observations where `dataset == "star"`. Store the resulting filtered data frame as a new data frame called `star_data`.
+star_data <- datasaurus_dozen %>%
+  filter(dataset == "star")
 
+# Calculate a summary statistic that we call `r` equal to the correlation coefficient between `x` and `y` for the `dino` dataset 
+star_data %>%
+  summarize(r = cor(x, y))
 ```
 
 Then, plot `y` versus `x` for the `star` dataset.  Does the plot look the same as the plot of the `dino` data?
 
-> RESPONSE:
+> RESPONSE: The plot is not the same, because now it plots a star instead. I feel like I see where this is going...
 
 ```{r}
-
+ggplot(data = star_data, mapping = aes(x = x, y = y)) +
+  geom_point()
 ```
 
 
