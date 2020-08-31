@@ -3,6 +3,7 @@ title: 'STAT 231: Problem Set 1A'
 author: "THAI NGUYEN"
 date: "due by 5 PM on Monday, August 31"
 output:
+  pdf_document: default
   html_document:
     df_print: paged
 ---
@@ -31,7 +32,7 @@ Steps to proceed:
 
 ```{r, setup, include=FALSE}
 # Load packages here 
-library(mdsr)   
+library(mdsr)
 
 knitr::opts_chunk$set(
   tidy=FALSE,     # display code as typed
@@ -102,7 +103,7 @@ p
 ### b.
 Replace `x = drg` with `x = reorder(drg, mean_charge)`, but also remove the `theme()` line.  Now what happens?  What was the purpose of the `theme()` line?  Hint: You may need to knit the document and look at the pdf to better observe what's happening.
 
-> ANSWER:  
+> ANSWER: The theme line rotates the number represent the Medical Procedure vertically, which makes looking at the graph easier. Without the theme() line, there are overlaps between the labeling of each column.
 
 ```{r}
 g <- ggplot(data = ChargesNJ, aes(x = reorder(drg, mean_charge), y = mean_charge)) + geom_bar(fill = "gray", stat = "identity") + ylab("Statewide Average Charges ($)") + xlab("Medical Procedure (DRG)") 
@@ -116,7 +117,8 @@ g
 
 As you read through (and, better yet -- code along with (not required, but useful practice!)) -- the extended example on historical baby names in section 3.3.1, write down two questions you have about any of the R code used in that example.  (Your questions could be about what a specific part of the code -- ggplot or not -- is actually doing, or a more general question about any of the commands used.)  Please be thoughtful about your questions; we will use them (anonymously) in an exercise in class this week.
 
-> ANSWER: 
+> ANSWER: I tried to code along with the text but couldn't find the Hmisc package that is required to get the median year of birth data so I skipped that part. Thus the end result is missing the blue bar and the black line. 
+I was wondering why in the text, the line "The median living Joseph is 37 years old" is fully out of the arrow, while in my graph, the arrow cut into the words?
 
 ```{r}
 # to get you started following along . . .
@@ -130,7 +132,17 @@ name_plot <- ggplot(data = joseph, aes(x = year)) +
   geom_bar(stat = "identity", aes(y = count_thousands*alive_prob)
            , fill = "#b2d7e9", color = "white")
 
+name_plot <- name_plot + ylab("Number of People (thousands)") + xlab(NULL) + ggtitle("Age Distribution of American Boys Named Joseph") + geom_text(x = 1935, y = 40, label = "Number of Josephs\nborn each year") + geom_text(x = 1915, y = 13, label = "Number of Josephs\nborn each year\nestimated to be alive\non 1/1/2014", colour = "#b2d7e9") + 
+  geom_text(x = 2003, y = 40, 
+            label = "The median\nliving Josephs\nis 37 years old",
+            colour = "darkgray") +
+  geom_curve(x = 1995, xend = 1974, y = 40, yend = 24, 
+             arrow = arrow(length = unit(0.3, "cm")), curvature = 0.5) + ylim(0, 42)
+
 name_plot
+
+
+
 ```
 
 
