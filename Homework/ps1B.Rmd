@@ -1,6 +1,6 @@
 ---
 title: "STAT 231: Problem Set 1B"
-author: "YOUR NAME HERE"
+author: "Thai Nguyen"
 date: "due by 5 PM on Friday, September 4"
 output: pdf_document
 ---
@@ -46,15 +46,17 @@ Consider the data graphic for Career Paths at Williams College at: https://web.w
 
 a. What story does the data graphic tell?  What is the main message that you take away from it?
 
-> ANSWER:
+> ANSWER: The data graphic aims to tell viewers the relationship between majors of Alumni of Williams and their career path. The main message that I got from the graphic is that history, english/literatures, political studies and economics are the most popular majors, while law, banking/finance, education and health/medicine are the most popular career paths. 
 
 b. Can the data graphic be described in terms of the taxonomy presented in this chapter?  If so, list the visual cues, coordinate system, and scale(s).  If not, describe the feature of this data graphic that lies outside of that taxonomy.
 
-> ANSWER:
+> ANSWER: The visual cues that are used include area, which is used to represent the number of alumna in each cateogory, and color, which is used to separate the majors into 3 groups: natural sciences, social sciences and arts. No specific coordinate system or scales were used. A feature that might lie outside of the taxonomy we learnt is the strands connecting the two groups, which changes in size travelling through the circle but at the start and end still represents the number of alumna in each category. 
 
 c. Critique and/or praise the visualization choices made by the designer.  Do they work? Are they misleading?  Thought-provoking?  Brilliant?  Are there things that you would have done differently?  Justify your response.
 
-> ANSWER:
+> ANSWER: I like the visual choice of the designer because I think it communicates the goal effectively. From the visual I can get a sense of the proportion of any specific major group that goes into a career, and somewhat see the distribution of alumna in any major going into the various career choices. 
+Something that I would improve is the choice of the overall shape. Putting the data visuals into a circle doesn't really make sense to me because it makes distinguishing majors and careers difficult. The curvature of each category might also make it difficult to truly compare the size of each category. Instead of connecting them to a circle maybe separating them into two opposite top and bottom and have the strands just connecting vertically would make the graphics more pleasing. 
+Another thing that I will change is to include more information to the graphics. I only know that Cultural studies consist of 3 other majors, but no more information on which majors were grouped into which category.
 
 
 \newpage
@@ -62,12 +64,12 @@ c. Critique and/or praise the visualization choices made by the designer.  Do th
 
 Explain why the following command does not color the data points blue, then write down the command that will turn the points blue.
 
-> ANSWER:
+> ANSWER: Since the color command is within the aesthetic function, instead of changing the color of the data points to blue, it creates a legend instead. To fix this, we simply have to put the color command outside of the aesthetic function, as altered in the code below.
 
 ```{r}
 library(ggplot2)
 ggplot(data = mpg) + 
-  geom_point(mapping = aes(x = displ, y = hwy, color = "blue"))
+  geom_point(mapping = aes(x = displ, y = hwy), color = 'blue')
 ```
 
 
@@ -76,9 +78,17 @@ ggplot(data = mpg) +
 
 Use the `MLB_teams` data in the `mdsr` package to create an informative data graphic that illustrates the relationship between winning percentage and payroll in context. What story does your graph tell?
 
-> ANSWER:
+> ANSWER: The graph tells me that there is a positive linear correlation between the payroll of a club and the win percentage of the club. However, from the best fit line we see that there is much variability of win percentage at the same level of payroll, which indicates that this relationship might be weak. 
 
 ```{r}
+data(MLB_teams)
+#summary(MLB_teams)
+#basic scatterplot
+g <- ggplot(data = MLB_teams, aes(y = WPct, x = payroll)) + 
+  geom_point(color = 'blue') + xlab("Payroll of a club") + ylab("Win Percentage of a club")
+#add regression line
+g <- g + geom_smooth(method = "lm", se = 0, color = 'red')
+g
 
 ```
 
@@ -91,7 +101,6 @@ Using data from the `nasaweather` package, use the `geom_path()` function to plo
 Note: be sure you load the `nasaweather` package and use the `storms` dataset from that package!  
 
 ```{r}
-
 ```
 
 
