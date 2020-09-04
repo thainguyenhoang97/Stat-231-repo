@@ -101,6 +101,14 @@ Using data from the `nasaweather` package, use the `geom_path()` function to plo
 Note: be sure you load the `nasaweather` package and use the `storms` dataset from that package!  
 
 ```{r}
+#install.packages("nasaweather")
+data(storms)
+#summary(storms)
+st <- ggplot(data = storms) +
+  geom_path(aes(y = lat, x = long, color = name)) +
+  facet_wrap(~year, nrow = 4) +
+  scale_color_discrete(guide = "none")
+st
 ```
 
 
