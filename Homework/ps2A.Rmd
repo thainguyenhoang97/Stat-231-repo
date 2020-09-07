@@ -29,6 +29,8 @@ Steps to proceed:
 
 ```{r, setup, include=FALSE}
 library(mdsr)   
+library(dplyr)
+library(tidyverse)
 
 knitr::opts_chunk$set(
   tidy=FALSE,     # display code as typed
@@ -77,9 +79,13 @@ Getting NAs for `avg_arr_delay`?  That happens when some observations are missin
 
 ```{r}
 flightsJoined3 %>%
+  group_by(name) %>%
   filter(is.na(arr_delay)==FALSE) %>%
   summarize(
-   N = n(), avg_arr_delay = mean(arr_delay), avg_dist_km = mean(distance_km))
+   N = n(), avg_arr_delay = mean(arr_delay), avg_dist_km = mean(distance_km)) %>%
+  arrange(desc(avg_arr_delay))
+
+
 
 ```
 
@@ -100,30 +106,38 @@ babynames2 <- babynames %>%
 ### b. 
 Following the code presented in Section 5.2.4, create a dataset called `BabyNarrow` that summarizes the total number of people with each name (born between 2000 and 2017), grouped by sex. (Hint: follow the second code chunk on page 102, but don't filter on any particular names.)  Look at the dataset.  Why have we called this dataset "narrow"?
 
-> ANSWER:
+> ANSWER: This is called narrow because there are only 2 columns of variables but many rows of observations. It is also easier for us to add in variables if needs be.
+(I have a question on this exercise, because the code chunk on page 102 makes the data "wide" with the "spread" function, which in the context of the book means separating the sexes into Male and Female. So if we follow the book closely then the data would be wide and not narrow? Couldn't find the time to clarify on this so I am putting it here)
 
 ```{r}
-
-
+BabyNarrow <- babynames2 %>%
+  group_by(name,sex) %>%
+  summarise(total = sum(n)) 
 ```
 
 ### c.
 Now, following the code chunk presented on page 103, put the data into a wide format (call the new dataset `BabyWide`), and only keep observations where both `M` and `F` are greater than 10,000.  Compute the `ratio` (as `pmin(M/F, F/M`)) and identify the top three names with the largest ratio.  (Note: these names could be different from the ones found on page 103 since we limited the dataset to years 2000-2017 and names with greater than 10,000 individuals.)
 
-> ANSWER:
+> ANSWER: The top three names with the largest ratio are Justice, Skyler and Quinn.
 
 ```{r}
-
-
+BabyWide <- BabyNarrow %>%
+  spread(key = sex, value = total, fill = 0) %>%
+  filter(M > 10000, F > 10000)
+  
+ratio <- BabyWide %>%
+  mutate(ratio = pmin(M / F, F / M )) %>%
+  arrange(desc(ratio)) %>%
+  head(3)
 ```
 
 ### d.
 Lastly, use the `gather()` function (or the `pivot_longer()` function) to put the dataset back into narrow form.  Call this dataset `BabyNarrow2`.  Hint: see Section 5.2.3.  Why are the number of observations in `BabyNarrow2` different from that in `BabyNarrow`?
 
-> ANSWER: 
+> ANSWER: Because when we widen the data we only keep observations where both 'M' and 'F' are higher than 10000. Thus when we narrow it back down there are only observations that satisfy those criteria being narrowed down back to sex and total. 
 
 ```{r}
-
-
+BabyNarrow2 <- BabyWide %>%
+  gather(key = sex, value = total, M, F)
 ```
 
