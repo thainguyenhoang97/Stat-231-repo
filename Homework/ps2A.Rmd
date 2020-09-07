@@ -64,7 +64,7 @@ Hint: see examples in Section 4.1 for subsetting datasets and creating new varia
 ```{r}
 flightsJoined2 <- flightsJoined %>%
   mutate(distance_km = distance*1.6)
-flightsJoined2 %>%
+flightsJoined3 <- flightsJoined2 %>%
   select(name, flight, arr_delay, distance_km) %>% 
   filter(distance_km < 500)
 ```
@@ -76,7 +76,10 @@ Lastly, using the functions introduced in Section 4.1.4, compute the number of f
 Getting NAs for `avg_arr_delay`?  That happens when some observations are missing that data.  Before grouping and summarizing, add a line to exclude observations with missing arrival delay information using `filter(is.na(arr_delay)==FALSE)`.
 
 ```{r}
-
+flightsJoined3 %>%
+  filter(is.na(arr_delay)==FALSE) %>%
+  summarize(
+   N = n(), avg_arr_delay = mean(arr_delay), avg_dist_km = mean(distance_km))
 
 ```
 
@@ -88,9 +91,10 @@ Getting NAs for `avg_arr_delay`?  That happens when some observations are missin
 Working with the `babynames` data table in the `babynames` package, create a dataset `babynames2` that only includes years 2000 to 2017.
 
 ```{r}
-
-
-
+#install.packages("babynames")
+library(babynames)
+babynames2 <- babynames %>%
+  filter(year >= 2000 & year <= 2017)
 ```
 
 ### b. 
