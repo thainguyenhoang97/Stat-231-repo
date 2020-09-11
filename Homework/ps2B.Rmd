@@ -85,10 +85,22 @@ Pitching %>%
 
 a. The Violations data set in the `mdsr` package contains information regarding the outcome of health inspections in New York City.  Use these data to calculate the median violation score by zipcode and dba for zipcodes in Manhattan.  What pattern (if any) do you see between the number of inspections and the median score?  Generate a visualization to support your response.  
 
-> ANSWER:  
+> ANSWER:  There is a positive correlation between the number of inspections and the median score. By plotting a scatterplot of median score against number of inspections, we can see that the best-fit line shows a positive correlation between these two variables. 
 
 ```{r}
+data("Violations")
+#Generate dataset for consideration of score by zip code
+scz <- Violations %>%
+  filter(boro == "MANHATTAN") %>%
+  drop_na(score) %>%
+  group_by(zipcode, dba) %>% summarise(med_vi_sco = median(score), insp_no = n())
 
+#create scatterplot for visualization
+p <- ggplot(data = scz, aes(x = insp_no, y = med_vi_sco)) + 
+  geom_point() +
+  xlab("Number of inspections") + ylab("Median score") +
+  geom_smooth(method = "lm", se = 0, color = 'blue')
+p
 ```
 
 b.  In your visualization in part (a), there should be at least a few points that stand out as outliers.  For *one of the outliers*, add text to the outlier identifying what business it is and an arrow pointing from the text to the observation.  First, you may want to `filter` to identify the name of the business (so you know what text to add to the plot).  
@@ -96,8 +108,13 @@ b.  In your visualization in part (a), there should be at least a few points tha
 (Can't remember how to create a curved arrow in `ggplot`?  Can't remember how to add text to the plot in `ggplot`?  Check out the answers to questions #5 and #8, respectively, in the Moodle R Q&A forum!)
 
 ```{r}
-
-
+#Identify business name(s)
+scz %>%
+  filter(med_vi_sco > 90)
+#Add label and arrow
+p + geom_curve(aes(x = 50, y = 96, xend = 28, yend = 110), curvature = -0.2,
+               arrow = arrow(angle = 20, length = unit(0.3, "cm"), type = "closed")) +
+  geom_text(x = 60, y = 96, label = "Roxy Diner", color = "red")
 ```
 
 
@@ -116,6 +133,16 @@ FakeDataLong <- data.frame(grp = c("A","A","B", "B")
                            , meanR = c(0.34, 0.57, 0.40, 0.65)
                            , sdR = c(0.08, 0.33, 0.07, 0.27))
 
+FakeDataWide <- FakeDataLong %>%
+  #stacking values on top of each other
+  pivot_longer(cols = c(meanL, sdL, meanR, sdR), names_to = "Categories", values_to = "Value" ) %>%
+  #Create new variable to store the names for categories in final result
+  mutate(join = paste(sex, Categories, sep = ".")) %>%
+  select(grp, join, Value) %>%
+  #Arrive at final result by pivotting wide
+  pivot_wider(id_cols = grp, names_from = join, values_from = Value)
+FakeDataWide <- FakeDataWide[, c(1,2,4,3,5,6,8,7,9)]
+FakeDataWide
 ```
 
 \newpage
