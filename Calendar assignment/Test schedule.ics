@@ -1,0 +1,2190 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:thhnguyen21@amherst.edu
+X-WR-TIMEZONE:Asia/Ho_Chi_Minh
+BEGIN:VTIMEZONE
+TZID:America/New_York
+X-LIC-LOCATION:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART:20190221T230000Z
+DTEND:20190222T010000Z
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=meetings:mailto:mtholyoke.edu_sdbt2n9t3oelk5vsm6m40aulqc@group
+ .calendar.google.com
+UID:3gc5b5som9ibqpfqa16f8u75ff@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=pham25
+ h@mtholyoke.edu;X-NUM-GUESTS=0:mailto:pham25h@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Nguyen
+  Nguyen;X-NUM-GUESTS=0:mailto:nguye84t@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=le22u@
+ mtholyoke.edu;X-NUM-GUESTS=0:mailto:le22u@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=tr
+ an33n@mtholyoke.edu;X-NUM-GUESTS=0:mailto:tran33n@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tran32
+ d@mtholyoke.edu;X-NUM-GUESTS=0:mailto:tran32d@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=trungd
+ o@umass.edu;X-NUM-GUESTS=0:mailto:trungdo@umass.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Nhu Do
+ ;X-NUM-GUESTS=0:mailto:do23n@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Li
+ nh Nguyen;X-NUM-GUESTS=0:mailto:nguye55l@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=My
+  Linh Le;X-NUM-GUESTS=0:mailto:le24m@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=hb
+ hoang@umass.edu;X-NUM-GUESTS=0:mailto:hbhoang@umass.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nguye5
+ 6l@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nguye56l@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Ch
+ i Bui;X-NUM-GUESTS=0:mailto:bui23c@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=khuu22
+ m@mtholyoke.edu;X-NUM-GUESTS=0:mailto:khuu22m@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ngo22k
+ @mtholyoke.edu;X-NUM-GUESTS=0:mailto:ngo22k@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=tpnguy
+ en@umass.edu;X-NUM-GUESTS=0:mailto:tpnguyen@umass.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=doan22
+ c@mtholyoke.edu;X-NUM-GUESTS=0:mailto:doan22c@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Minh T
+ am Hoang;X-NUM-GUESTS=0:mailto:hoang29t@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=pham24
+ n@mtholyoke.edu;X-NUM-GUESTS=0:mailto:pham24n@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=hmdo@u
+ mass.edu;X-NUM-GUESTS=0:mailto:hmdo@umass.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ng
+ uye72l@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nguye72l@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Natali
+ e Truong;X-NUM-GUESTS=0:mailto:truon24n@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ng
+ uye84h@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nguye84h@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Vi Ngu
+ yen;X-NUM-GUESTS=0:mailto:nguye29v@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nguye5
+ 4a@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nguye54a@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Thu Da
+ o;X-NUM-GUESTS=0:mailto:dao24t@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nguye4
+ 3m@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nguye43m@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=bui24p
+ @mtholyoke.edu;X-NUM-GUESTS=0:mailto:bui24p@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Ol
+ ive Tran;X-NUM-GUESTS=0:mailto:tran22x@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=do
+ 23p@mtholyoke.edu;X-NUM-GUESTS=0:mailto:do23p@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=phaml2
+ 2d@mtholyoke.edu;X-NUM-GUESTS=0:mailto:phaml22d@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nguye8
+ 3t@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nguye83t@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nguye9
+ 4t@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nguye94t@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=DECLINED;CN=huynh2
+ 6t@mtholyoke.edu;X-NUM-GUESTS=0:mailto:huynh26t@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=nham22
+ k@mtholyoke.edu;X-NUM-GUESTS=0:mailto:nham22k@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=pt
+ ran@umass.edu;X-NUM-GUESTS=0:mailto:ptran@umass.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=dk
+ nguyen@umass.edu;X-NUM-GUESTS=0:mailto:dknguyen@umass.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Anh M 
+ Tran;X-NUM-GUESTS=0:mailto:tran28a@mtholyoke.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=lo
+ ngvo@umass.edu;X-NUM-GUESTS=0:mailto:longvo@umass.edu
+CREATED:20190217T044729Z
+DESCRIPTION:Performance list:\n\n\n1. Introduction: To the Beginning\n2. Tr
+ aditional Dance\n3. Skit: Cơm Nhà\n4. Interlude: Mom\n5. Lạc Trôi\n6. Fashi
+ on Show\n7. Hot topic: Traditional vs. Modern?\nINTERMISSION: An Ode to Vie
+ tnam Night 2019’s Menu\n8. V-Pop Lovers\n9. Senior Performance\n10. Acousti
+ c Medley\n11. Khúc Giao Mùa Chorus\n12. Conclusion: Origin
+LAST-MODIFIED:20190221T080749Z
+LOCATION:Chapin Auditorium\, 50 College St\, South Hadley\, MA 01075\, USA
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:MANDATORY Vietnam Night Full Dress Rehearsal
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20180123T210000Z
+DTEND:20180123T213000Z
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=Paul Gallegos:mailto:pgallegos@amherst.edu
+UID:74DDBF1D-B760-4B9D-8A98-57C2D3DA984C
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Paul G
+ allegos;X-NUM-GUESTS=0:mailto:pgallegos@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=thhngu
+ yen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20190228T162741Z
+DESCRIPTION:Hi\, Thai –\n\n\n\n\n\n\n\nPlease let me know if this ends up n
+ ot working for you. See you soon!\n\n\n\n\n\n\n\nBest\,\n\n\n\nPaul\n\n\n\n
+ \n\n\n\nHi Paul\n\n\n\n\n\n\n\nI'm free tomorrow after 2\, it that fine wit
+ h you?\n\n\n\n\n\n\n\nHope you had a great break!\n\n\n\n\n\n\n\nBest\,\n\n
+ \n\nThai\n\n\n\n\n\n\n\nOn Mon\, Jan 22\, 2018 at 9:58 AM Paul Gallegos <pg
+ allegos@amherst.edu mailto:pgallegos@amherst.edu> wrote:\n\n\n\n\n\n\n\n\n\
+ n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+ \n\n\n\n\n\n\n\n\n\n\n\n\n\nHi\, Thai –\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\nAre
+  you available this week to briefly go over poster run for this semester? H
+ ope your week is starting off well.\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\nBest\,\
+ n\n\n\n\n\n\n\nPaul\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
+ n----------------------------------------\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPa
+ ul Gallegos\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAmherst College\n\n\n\n\n\n\n\n\
+ n\n\n\n\n\n\n\nDirector of Student Activities\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n
+ \nKeefe #017\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nO: 413.542.5434\n\n\n\n\n\n\n\n
+ \n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\nFrom: Tha
+ i Nguyen 21 <thhnguyen21@amherst.edu mailto:thhnguyen21@amherst.edu>\n\n\n\
+ n\n\n\n\n\nDate: Wednesday\, December 20\, 2017 at 9:18 AM\n\n\n\n\n\n\n\n\
+ nTo: Paul Gallegos <pgallegos@amherst.edu mailto:pgallegos@amherst.edu>\n\n
+ \n\n\n\n\n\n\nSubject: Time chit\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n
+ \n\n\n\n\n\n\n\n\n\n\nHi Paul\, \n\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\n\n\n\n
+ \n\n\n\n\n\n\nAs this pay period ends earlier than others\, would you be in
+  your office some time tomorrow so I can pass by and submit my time chit re
+ cording the hours for the posters I did last week?\n\n\n\n\n\n\n\n\n\n\n\n\
+ n\n\n\n \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nAll the best\n\n\n\n\n\n\n\n\n\n\n\
+ n\n\n\n\nThai
+LAST-MODIFIED:20190228T162741Z
+LOCATION:Keefe 017
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Poster Run Discussion
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20180205T200000Z
+DTEND:20180205T203000Z
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=Sophie Koff:mailto:skoff@amherst.edu
+UID:A8F9F18D-1F19-4369-ADDD-17901A6DA6B4
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=thhngu
+ yen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=Sophie
+  Koff;X-NUM-GUESTS=0:mailto:skoff@amherst.edu
+CREATED:20190228T162741Z
+DESCRIPTION:When: Monday\, February 05\, 2018 3:00 PM-3:30 PM. (UTC-05:00) 
+ Eastern Time (US & Canada)\nWhere: Keefe 219\n\n*~*~*~*~*~*~*~*~*~*
+LAST-MODIFIED:20190228T162741Z
+LOCATION:Keefe 219
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Thai CSM 
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20190411T223000Z
+DTEND:20190411T233000Z
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=thhnguyen21@amherst.edu:mailto:thhnguyen21@amherst.edu
+UID:5172kd513tkbfik3bj3sule5mp@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=thhngu
+ yen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=dangho
+ ngtrinh12@gmail.com;X-NUM-GUESTS=0:mailto:danghongtrinh12@gmail.com
+CREATED:20190408T020513Z
+DESCRIPTION:Feel free to call me at+1 (413) 835-1631. Could you please also
+  send me a calendar invite?\n\nOn Sun\, Apr 7\, 2019 at 9:59 PM Thai Nguyen
+  <thhnguyen21@amherst.edu> wrote:\n>\n> Hi anh\,\n>\n> Yes\, that would be 
+ perfect. On which platform can I contact you? My phone number is (413)-404-
+ 7393. \n>\n> Best\,\n> Thai\n>\n> On Sun\, Apr 7\, 2019 at 9:46 PM Dang Tri
+ nh <danghongtrinh12@gmail.com> wrote:\n>>\n>> Hi Thai\,\n>>\n>> Happy to ch
+ at. Would you be free around 6:30pm on Thursday? That should work best for 
+ me.\n>>\n>> Thanks\,\n>>\n>> Dang\n>>\n>> On Sun\, Apr 7\, 2019 at 9:36 PM 
+ Thai Nguyen <thhnguyen21@amherst.edu> wrote:\n>>>\n>>> Dear Mr. Trinh\,\n>>
+ >\n>>> My name is Thai Nguyen\, and I am currently a rising junior of class
+  2021 at Amherst College. I knew about you through John Mi...
+LAST-MODIFIED:20190408T101740Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Introductory call
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20191018T180000Z
+DTEND:20191018T193000Z
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=mlyster@amherst.edu:mailto:mlyster@amherst.edu
+UID:5lvikms3qlem2nh67ed3psnvtb@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=arlope
+ z93@amherst.edu;X-NUM-GUESTS=0:mailto:arlopez93@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=av
+ alone21@amherst.edu;X-NUM-GUESTS=0:mailto:avalone21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=abrito
+ 21@amherst.edu;X-NUM-GUESTS=0:mailto:abrito21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=mlyste
+ r@amherst.edu;X-NUM-GUESTS=0:mailto:mlyster@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=agilpi
+ nfalk21@amherst.edu;X-NUM-GUESTS=0:mailto:agilpinfalk21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=thhngu
+ yen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=sbarr@
+ amherst.edu;X-NUM-GUESTS=0:mailto:sbarr@amherst.edu
+CREATED:20190919T200415Z
+DESCRIPTION:
+LAST-MODIFIED:20191017T214842Z
+LOCATION:Center for Community Engagement
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:DTC Workshop Prep for Executive Committee Meeting
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200421T160000Z
+DTEND:20200421T170000Z
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=Elizabeth Terry:mailto:eterry@ciee.org
+UID:20200417T091322Z-92065620407@fe80:0:0:0:c53:3eff:fe2d:fef1eth0
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=An
+ drew Brinen;X-NUM-GUESTS=0:mailto:brinen@usc.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN="P
+ athomsak, Chadhip";X-NUM-GUESTS=0:mailto:cpathomsak1@babson.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ct
+ 644@georgetown.edu;X-NUM-GUESTS=0:mailto:ct644@georgetown.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=jo
+ nes_g1@denison.edu;X-NUM-GUESTS=0:mailto:jones_g1@denison.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN="H
+ anda, Jane";X-NUM-GUESTS=0:mailto:jphanda@email.wm.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=la
+ rissaq@usc.edu;X-NUM-GUESTS=0:mailto:larissaq@usc.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=li
+ zzieleboyer@gmail.com;X-NUM-GUESTS=0:mailto:lizzieleboyer@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ro
+ ng_k1@denison.edu;X-NUM-GUESTS=0:mailto:rong_k1@denison.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=rs
+ regis@eckerd.edu;X-NUM-GUESTS=0:mailto:rsregis@eckerd.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=Al
+ an Hudson;X-NUM-GUESTS=0:mailto:alan.hudson@kellogg.ox.ac.uk
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=OPT-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=ss
+ hrestha@soka.edu;X-NUM-GUESTS=0:mailto:sshrestha@soka.edu
+CREATED:20200417T091627Z
+DESCRIPTION:Elizabeth Terry is inviting you to a scheduled Zoom meeting.\n\
+ nJoin Zoom Meeting\nhttps://ciee.zoom.us/j/92065620407?pwd=YW5mN3BnY1FkL1Nk
+ bWMzK29tNkhVZz09\n\nMeeting ID: 920 6562 0407\nPassword: 954975\nOne tap mo
+ bile\n+13126266799\,\,92065620407# US (Chicago)\n+13462487799\,\,9206562040
+ 7# US (Houston)\n\nDial by your location\n        +1 312 626 6799 US (Chica
+ go)\n        +1 346 248 7799 US (Houston)\n        +1 408 638 0968 US (San 
+ Jose)\n        +1 646 876 9923 US (New York)\n        +1 669 900 6833 US (S
+ an Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\nMeeting I
+ D: 920 6562 0407\nFind your local number: https://ciee.zoom.us/u/anO0KS7t5\
+ n
+LAST-MODIFIED:20200417T091401Z
+LOCATION:https://ciee.zoom.us/j/92065620407?pwd=YW5mN3BnY1FkL1NkbWMzK29tNkh
+ VZz09
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:China Society and IR Drop In Meeting
+TRANSP:OPAQUE
+X-MICROSOFT-CDO-ALLDAYEVENT:FALSE
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-BUSYSTATUS:TENTATIVE
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+X-MICROSOFT-CDO-INTENDEDSTATUS:BUSY
+X-MICROSOFT-CDO-OWNERAPPTID:-116307996
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MICROSOFT-DONOTFORWARDMEETING:FALSE
+X-MICROSOFT-LOCATIONS:[{"DisplayName":"https://ciee.zoom.us/j/92065620407?p
+ wd=YW5mN3BnY1FkL1NkbWMzK29tNkhVZz09"\,"LocationAnnotation":""\,"LocationUri
+ ":""\,"LocationStreet":""\,"LocationCity":""\,"LocationState":""\,"Location
+ Country":""\,"LocationPostalCode":""\,"LocationFullAddress":""}]
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200325T120000
+DTEND;TZID=America/New_York:20200325T130000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200401T035959Z;INTERVAL=1;BYDAY=WE
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200325T120000
+DTEND;TZID=America/New_York:20200325T130000
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+RECURRENCE-ID;TZID=America/New_York:20200325T120000
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200401T120000
+DTEND;TZID=America/New_York:20200401T130000
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200401T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+RECURRENCE-ID;TZID=America/New_York:20200401T120000
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200408T120000
+DTEND;TZID=America/New_York:20200408T130000
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200408T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+RECURRENCE-ID;TZID=America/New_York:20200408T120000
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200415T120000
+DTEND;TZID=America/New_York:20200415T130000
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200415T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+RECURRENCE-ID;TZID=America/New_York:20200415T120000
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200422T120000
+DTEND;TZID=America/New_York:20200422T130000
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200422T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+RECURRENCE-ID;TZID=America/New_York:20200422T120000
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200429T120000
+DTEND;TZID=America/New_York:20200429T130000
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200429T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+RECURRENCE-ID;TZID=America/New_York:20200429T120000
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200506T120000
+DTEND;TZID=America/New_York:20200506T130000
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200506T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+RECURRENCE-ID;TZID=America/New_York:20200506T120000
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200401T120000
+DTEND;TZID=America/New_York:20200401T130000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200408T035959Z;INTERVAL=1;BYDAY=WE
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200401T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200408T120000
+DTEND;TZID=America/New_York:20200408T130000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200415T035959Z;INTERVAL=1;BYDAY=WE
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200408T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200415T120000
+DTEND;TZID=America/New_York:20200415T130000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200422T035959Z;INTERVAL=1;BYDAY=WE
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200415T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200422T120000
+DTEND;TZID=America/New_York:20200422T130000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200429T035959Z;INTERVAL=1;BYDAY=WE
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200422T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200429T120000
+DTEND;TZID=America/New_York:20200429T130000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200506T035959Z;INTERVAL=1;BYDAY=WE
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200429T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=America/New_York:20200506T120000
+DTEND;TZID=America/New_York:20200506T130000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20200506T170000Z;INTERVAL=1;BYDAY=WE
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=shockman@amherst.edu:mailto:shockman@amherst.edu
+UID:ms3uuqqnsq1dqvsvo5gfr4hn2c_R20200506T160000@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+CREATED:20200324T143847Z
+DESCRIPTION:Stephanie Hockman is inviting you to a scheduled Zoom meeting.\
+ n\nJoin Zoom Meeting\nhttps://amherstcollege.zoom.us/j/933561165?pwd=OUxSd1
+ BKVXhmOWYzYytlVW5vb0pzQT09\n\nMeeting ID: 933 561 165\nPassword: 892380\n\n
+ One tap mobile\n+16465588656\,\,933561165# US (New York)\n+13126266799\,\,9
+ 33561165# US (Chicago)\n\nDial by your location\n        +1 646 558 8656 US
+  (New York)\n        +1 312 626 6799 US (Chicago)\n        +1 669 900 6833 
+ US (San Jose)\n        +1 253 215 8782 US\n        +1 301 715 8592 US\n    
+     +1 346 248 7799 US (Houston)\nMeeting ID: 933 561 165\nFind your local 
+ number: https://amherstcollege.zoom.us/u/ay3dxJEkN\n\nJoin by SIP\n93356116
+ 5@zoomcrc.com\n\nJoin by H.323\n162.255.37.11 (US West)\n162.255.36.11 (US 
+ East)\n221.122.88.195 (China)\n115.114.131.7 (India Mumbai)\n115.114.115.7 
+ (India Hyderabad)\n213.19.144.110 (EMEA)\n103.122.166.55 (Australia)\n209.9
+ .211.110 (Hong Kong)\n64.211.144.160 (Brazil)\n69.174.57.160 (Canada)\n207.
+ 226.132.110 (Japan)\nMeeting ID: 933 561 165\nPassword: 892380\n
+LAST-MODIFIED:20200512T212003Z
+LOCATION:Zoom Meeting (see link below)
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:WSJ Wednesday
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200724T160000Z
+DTEND:20200724T163000Z
+DTSTAMP:20200915T092809Z
+ORGANIZER;CN=rjalvarado@amherst.edu:mailto:rjalvarado@amherst.edu
+UID:0sichq1ucftpi60p42iiopide4@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=NEEDS-ACTION;CN=th
+ hnguyen21@amherst.edu;X-NUM-GUESTS=0:mailto:thhnguyen21@amherst.edu
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=rjalva
+ rado@amherst.edu;X-NUM-GUESTS=0:mailto:rjalvarado@amherst.edu
+CREATED:20200720T211153Z
+DESCRIPTION:<a href="https://amherstcollege.zoom.us/j/9126942374">https://a
+ mherstcollege.zoom.us/j/9126942374</a>
+LAST-MODIFIED:20200720T211201Z
+LOCATION:https://amherstcollege.zoom.us/j/9126942374
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Thai/Alvarado Advising Meeting
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T012000Z
+DTEND:20200904T013500Z
+DTSTAMP:20200915T092809Z
+UID:49v1rposk3kn0i3lh8odoo4jra@google.com
+CREATED:20200908T041558Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T041558Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T013500Z
+DTEND:20200904T023000Z
+DTSTAMP:20200915T092809Z
+UID:0qmubkir7aeptpkrbaivr7suaq@google.com
+CREATED:20200908T041639Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T041639Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T023000Z
+DTEND:20200904T032000Z
+DTSTAMP:20200915T092809Z
+UID:5hrlkulji1nul71c10bnb6qkti@google.com
+CREATED:20200908T041710Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T041737Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T032000Z
+DTEND:20200904T042000Z
+DTSTAMP:20200915T092809Z
+UID:2l7g2s568i26rdah4v18o1r715@google.com
+CREATED:20200908T041753Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T041753Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T070000Z
+DTEND:20200904T072500Z
+DTSTAMP:20200915T092809Z
+UID:5t426k1iv93nv7u39jrh9re9v0@google.com
+CREATED:20200908T041819Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T041831Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T072500Z
+DTEND:20200904T075500Z
+DTSTAMP:20200915T092809Z
+UID:2cekpf179v1qf8dt4s4eubrfvg@google.com
+CREATED:20200908T041857Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T041857Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T075500Z
+DTEND:20200904T081000Z
+DTSTAMP:20200915T092809Z
+UID:10d3d61m2g7b9gd2bea4ggmjnc@google.com
+CREATED:20200908T041942Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T041943Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T081000Z
+DTEND:20200904T091000Z
+DTSTAMP:20200915T092809Z
+UID:0j94tf2vrt8n4dtdecnd1nlkps@google.com
+CREATED:20200908T042053Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042053Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T092000Z
+DTEND:20200904T112000Z
+DTSTAMP:20200915T092809Z
+UID:2me8efgkmcfm3e85obn7osnbd2@google.com
+CREATED:20200908T042113Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042113Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Gym
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T121500Z
+DTEND:20200904T130000Z
+DTSTAMP:20200915T092809Z
+UID:3q6dhf08hoar8n0qp7k5tde9hs@google.com
+CREATED:20200908T042140Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042152Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T130000Z
+DTEND:20200904T140000Z
+DTSTAMP:20200915T092809Z
+UID:03l0r4q0uti7ktgvi0eel7brm5@google.com
+CREATED:20200908T042201Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042207Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200904T153000Z
+DTEND:20200904T233000Z
+DTSTAMP:20200915T092809Z
+UID:5228s8365t2dulglid46otpo98@google.com
+CREATED:20200908T042332Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042332Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200905T010000Z
+DTEND:20200905T012000Z
+DTSTAMP:20200915T092809Z
+UID:02geu5c1boc4qa17p0lcglacm6@google.com
+CREATED:20200908T042412Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042412Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200905T012000Z
+DTEND:20200905T022000Z
+DTSTAMP:20200915T092809Z
+UID:0734dvm3h44hi8nmcih18t6n53@google.com
+CREATED:20200908T042507Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042507Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200905T080000Z
+DTEND:20200905T090000Z
+DTSTAMP:20200915T092809Z
+UID:5em9kobjo91hqdjkfu0b2fvpdd@google.com
+CREATED:20200908T042640Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042640Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200905T074000Z
+DTEND:20200905T080000Z
+DTSTAMP:20200915T092809Z
+UID:3e7pr2psndk3o4c51emmups67c@google.com
+CREATED:20200908T042659Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042659Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200905T130000Z
+DTEND:20200905T140000Z
+DTSTAMP:20200915T092809Z
+UID:4u0fl5i4uhl3ii0sccegqpjdu1@google.com
+CREATED:20200908T042917Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T042917Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200907T020000Z
+DTEND:20200907T040000Z
+DTSTAMP:20200915T092809Z
+UID:4mjn1i6djgop7eqp1p0ep35dvn@google.com
+CREATED:20200908T043018Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043026Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200907T040000Z
+DTEND:20200907T043000Z
+DTSTAMP:20200915T092809Z
+UID:1cf762sntau8qc8f60f3bieg90@google.com
+CREATED:20200908T043031Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043035Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200906T160000Z
+DTEND:20200907T003000Z
+DTSTAMP:20200915T092809Z
+UID:4fjtfccv2b6ihu7bvqc9upegke@google.com
+CREATED:20200908T043119Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043119Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200907T013000Z
+DTEND:20200907T020000Z
+DTSTAMP:20200915T092809Z
+UID:3anvl2imd19h2u3qqahdbc6961@google.com
+CREATED:20200908T043133Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043155Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200907T090000Z
+DTEND:20200907T093000Z
+DTSTAMP:20200915T092809Z
+UID:67et0f6dlf6otdjd09u3goas3l@google.com
+CREATED:20200908T043222Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043222Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200907T093000Z
+DTEND:20200907T113000Z
+DTSTAMP:20200915T092809Z
+UID:0js801mg5irtso80t1qr7708ad@google.com
+CREATED:20200908T043236Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043236Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200907T153000Z
+DTEND:20200907T163000Z
+DTSTAMP:20200915T092809Z
+UID:4mh23k3fvjgbhga9heavg4hj62@google.com
+CREATED:20200908T043254Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043254Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200907T173000Z
+DTEND:20200908T010000Z
+DTSTAMP:20200915T092809Z
+UID:5kojilp40cl181758h59pt6jv8@google.com
+CREATED:20200908T043342Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043342Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T013000Z
+DTEND:20200908T020000Z
+DTSTAMP:20200915T092809Z
+UID:79csg13d2ctp9ssv796fav6plp@google.com
+CREATED:20200908T043414Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043414Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T020000Z
+DTEND:20200908T034500Z
+DTSTAMP:20200915T092809Z
+UID:27isk677qbabvu82n8qhjs7634@google.com
+CREATED:20200908T043525Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043525Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T034500Z
+DTEND:20200908T040000Z
+DTSTAMP:20200915T092809Z
+UID:4rdvb36s71cj73mkrlbegan5vo@google.com
+CREATED:20200908T043547Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043547Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200903T163000Z
+DTEND:20200904T000000Z
+DTSTAMP:20200915T092809Z
+UID:084fg3093iikc5gs94nal5hjgs@google.com
+CREATED:20200908T043708Z
+DESCRIPTION:
+LAST-MODIFIED:20200908T043708Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T040000Z
+DTEND:20200908T045500Z
+DTSTAMP:20200915T092809Z
+UID:7j8fmm9fc9g7ljills56429ut7@google.com
+CREATED:20200909T085505Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T085505Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T072000Z
+DTEND:20200908T081000Z
+DTSTAMP:20200915T092809Z
+UID:337hs2u62i6saovf1s10rpv813@google.com
+CREATED:20200909T085523Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T085523Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T081000Z
+DTEND:20200908T082000Z
+DTSTAMP:20200915T092809Z
+UID:4k23fgj4i419g5u618ig2s316j@google.com
+CREATED:20200909T085549Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T085549Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T082000Z
+DTEND:20200908T092000Z
+DTSTAMP:20200915T092809Z
+UID:3lfq0h96ib7ed3ht04urna09hu@google.com
+CREATED:20200909T085631Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T085631Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T092000Z
+DTEND:20200908T094500Z
+DTSTAMP:20200915T092809Z
+UID:7eh9df9hrvkilf63dca6uo47ds@google.com
+CREATED:20200909T085806Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T085806Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T094500Z
+DTEND:20200908T103500Z
+DTSTAMP:20200915T092809Z
+UID:3erca2b74624e835lig8kkmrud@google.com
+CREATED:20200909T085929Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T085929Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T103500Z
+DTEND:20200908T110500Z
+DTSTAMP:20200915T092809Z
+UID:3nj7fvq3teh9qvb9ejm8e8ba16@google.com
+CREATED:20200909T091018Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091018Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Gym
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T121500Z
+DTEND:20200908T123000Z
+DTSTAMP:20200915T092809Z
+UID:71j8falm84jie9eduf44k64vs6@google.com
+CREATED:20200909T091103Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091103Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T123000Z
+DTEND:20200908T132500Z
+DTSTAMP:20200915T092809Z
+UID:6kcdj16dmm5uvbt70leolq8i2b@google.com
+CREATED:20200909T091121Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091121Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T132500Z
+DTEND:20200908T133500Z
+DTSTAMP:20200915T092809Z
+UID:3e7jib63n8hunh7mr5jq58f8of@google.com
+CREATED:20200909T091148Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091148Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T133500Z
+DTEND:20200908T140000Z
+DTSTAMP:20200915T092809Z
+UID:3knkn0s7s7r9mubqdn3r6tf993@google.com
+CREATED:20200909T091205Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091205Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T160000Z
+DTEND:20200908T190000Z
+DTSTAMP:20200915T092809Z
+UID:5r33n5cqakha684q0mo358udu9@google.com
+CREATED:20200909T091249Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091249Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T190000Z
+DTEND:20200908T203000Z
+DTSTAMP:20200915T092809Z
+UID:48sha7bl9q8j19fn3lb8cf7d59@google.com
+CREATED:20200909T091301Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091301Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Night class
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200908T203000Z
+DTEND:20200909T003000Z
+DTSTAMP:20200915T092809Z
+UID:1j2ou8ghoq90r0ecl0eq16hpeg@google.com
+CREATED:20200909T091314Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091314Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T010000Z
+DTEND:20200909T021000Z
+DTSTAMP:20200915T092809Z
+UID:209ko19antmb1nd7c339eq0lul@google.com
+CREATED:20200909T091341Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091341Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T021000Z
+DTEND:20200909T022500Z
+DTSTAMP:20200915T092809Z
+UID:07mchtkjjeu07a6et4rntkmge8@google.com
+CREATED:20200909T091415Z
+DESCRIPTION:
+LAST-MODIFIED:20200909T091415Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T022500Z
+DTEND:20200909T030500Z
+DTSTAMP:20200915T092809Z
+UID:5f3927t12ddassgolgq58opql9@google.com
+CREATED:20200915T041517Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041517Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T035000Z
+DTEND:20200909T044000Z
+DTSTAMP:20200915T092809Z
+UID:51so2grhoi71a4jiuervjm6fs4@google.com
+CREATED:20200915T041615Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041615Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T030500Z
+DTEND:20200909T034500Z
+DTSTAMP:20200915T092809Z
+UID:24r07r4dfbn9v76vs6che0hupr@google.com
+CREATED:20200915T041543Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041626Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T050000Z
+DTEND:20200909T055000Z
+DTSTAMP:20200915T092809Z
+UID:1qqavm0r32r8hab8gmjjdjegtj@google.com
+CREATED:20200915T041649Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041649Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T062000Z
+DTEND:20200909T071000Z
+DTSTAMP:20200915T092809Z
+UID:7vi5ndbpqftjhaugh7vv3sptlk@google.com
+CREATED:20200915T041707Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041707Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T071000Z
+DTEND:20200909T072000Z
+DTSTAMP:20200915T092809Z
+UID:3dcqoj9j98jk05fvv7rptdrcia@google.com
+CREATED:20200915T041723Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041723Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T072000Z
+DTEND:20200909T081500Z
+DTSTAMP:20200915T092809Z
+UID:6bcdtcibp13rhbanhtp8pasq1i@google.com
+CREATED:20200915T041738Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041738Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T081500Z
+DTEND:20200909T084000Z
+DTSTAMP:20200915T092809Z
+UID:6acbg62280h3nnao9eql8lt5re@google.com
+CREATED:20200915T041810Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041810Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T084000Z
+DTEND:20200909T091500Z
+DTSTAMP:20200915T092809Z
+UID:0msb1na7rpmqkqbd66jh1v6epc@google.com
+CREATED:20200915T041828Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041828Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T123500Z
+DTEND:20200909T130000Z
+DTSTAMP:20200915T092809Z
+UID:4nrvqr05m34jens0pq42s8tuf4@google.com
+CREATED:20200915T041852Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041852Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T130000Z
+DTEND:20200909T135000Z
+DTSTAMP:20200915T092809Z
+UID:23gn281dgs73cto7h2joadrmta@google.com
+CREATED:20200915T041907Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041907Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200909T160000Z
+DTEND:20200910T000000Z
+DTSTAMP:20200915T092809Z
+UID:5l0d0pkhhs348i3utav3c8cs90@google.com
+CREATED:20200915T041954Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T041954Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T013000Z
+DTEND:20200910T021000Z
+DTSTAMP:20200915T092809Z
+UID:0ch4tksfchir97lilpeg2u0ort@google.com
+CREATED:20200915T042012Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042012Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T021000Z
+DTEND:20200910T030000Z
+DTSTAMP:20200915T092809Z
+UID:30kjmvcviheqmjsgod6numghcr@google.com
+CREATED:20200915T042023Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042035Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T030000Z
+DTEND:20200910T031000Z
+DTSTAMP:20200915T092809Z
+UID:6c0d8dd5gmureujmtm8unj5r17@google.com
+CREATED:20200915T042048Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042048Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T031000Z
+DTEND:20200910T040000Z
+DTSTAMP:20200915T092809Z
+UID:1iv78878ccafl27ccb4co9h4ss@google.com
+CREATED:20200915T042106Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042106Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T040000Z
+DTEND:20200910T042000Z
+DTSTAMP:20200915T092809Z
+UID:67mu4e9hjf07iioge2fveei3p2@google.com
+CREATED:20200915T042124Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042132Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T042000Z
+DTEND:20200910T045500Z
+DTSTAMP:20200915T092809Z
+UID:2bn5n4hqjrdlvvn6ce3451ullo@google.com
+CREATED:20200915T042200Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042200Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T070000Z
+DTEND:20200910T081500Z
+DTSTAMP:20200915T092809Z
+UID:39ab36m7ae41n6jjttpinlco8q@google.com
+CREATED:20200915T042405Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042405Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T081500Z
+DTEND:20200910T082500Z
+DTSTAMP:20200915T092809Z
+UID:52vas7ka1kqjv8qsi3sbcho7sg@google.com
+CREATED:20200915T042423Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042423Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T082500Z
+DTEND:20200910T092000Z
+DTSTAMP:20200915T092809Z
+UID:1ji76ph01kvh9oteh4ijr790gb@google.com
+CREATED:20200915T042443Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042443Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T095000Z
+DTEND:20200910T112000Z
+DTSTAMP:20200915T092809Z
+UID:4u0ckbd3lpvlllj1eg9t61idq1@google.com
+CREATED:20200915T042502Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042502Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Gym
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T123000Z
+DTEND:20200910T132000Z
+DTSTAMP:20200915T092809Z
+UID:7i21tbodhr43ivkqgdevjj2uo1@google.com
+CREATED:20200915T042520Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042520Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T021000Z
+DTEND:20200911T030000Z
+DTSTAMP:20200915T092809Z
+UID:2l42sl4m9nfpf221vdif35ae06@google.com
+CREATED:20200915T042548Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042548Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T030000Z
+DTEND:20200911T032000Z
+DTSTAMP:20200915T092809Z
+UID:66gesgpve7mnd08lmv0cfamp15@google.com
+CREATED:20200915T042614Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042638Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T032000Z
+DTEND:20200911T043000Z
+DTSTAMP:20200915T092809Z
+UID:46jgi9i5k5414jhhnm4us3cta4@google.com
+CREATED:20200915T042654Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042654Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T065000Z
+DTEND:20200911T080000Z
+DTSTAMP:20200915T092809Z
+UID:05tsopnas7i96v3jcrnh4obesb@google.com
+CREATED:20200915T042726Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042726Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T080000Z
+DTEND:20200911T081500Z
+DTSTAMP:20200915T092809Z
+UID:01918b067j072n8v33g0g7jnsj@google.com
+CREATED:20200915T042739Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042739Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T081500Z
+DTEND:20200911T084000Z
+DTSTAMP:20200915T092809Z
+UID:6n5ha3kg8cepp9s7hko8q2lpv6@google.com
+CREATED:20200915T042759Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042818Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T084000Z
+DTEND:20200911T092500Z
+DTSTAMP:20200915T092809Z
+UID:5ogmaejoi2c1s38cnlprg0blp9@google.com
+CREATED:20200915T042845Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042845Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T092500Z
+DTEND:20200911T101500Z
+DTSTAMP:20200915T092809Z
+UID:234j6t1pofrprb37l0u3rc7vn9@google.com
+CREATED:20200915T042859Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042859Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T101500Z
+DTEND:20200911T103000Z
+DTSTAMP:20200915T092809Z
+UID:23mrc6upsmaa45jmhjgoupjp9h@google.com
+CREATED:20200915T042921Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042921Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T103000Z
+DTEND:20200911T110000Z
+DTSTAMP:20200915T092809Z
+UID:1ln2p718ea7euhjf696boed2fi@google.com
+CREATED:20200915T042934Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042934Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T121500Z
+DTEND:20200911T124500Z
+DTSTAMP:20200915T092809Z
+UID:73pfobes3847m83c6uoplkb0t1@google.com
+CREATED:20200915T042954Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T042954Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T124500Z
+DTEND:20200911T135000Z
+DTSTAMP:20200915T092809Z
+UID:5k38a4pipood8gp2mpsp6n2edt@google.com
+CREATED:20200915T043018Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043018Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T023000Z
+DTEND:20200913T032000Z
+DTSTAMP:20200915T092809Z
+UID:18bahbmti1avehnl5ntgmim3v5@google.com
+CREATED:20200915T043157Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043157Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T032000Z
+DTEND:20200913T043000Z
+DTSTAMP:20200915T092809Z
+UID:7jj05p6jrc2q45lr6ghka98epl@google.com
+CREATED:20200915T043213Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043213Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T073000Z
+DTEND:20200913T090000Z
+DTSTAMP:20200915T092809Z
+UID:5bo9g4imldju67gttc7vnmml3l@google.com
+CREATED:20200915T043239Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043239Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T090000Z
+DTEND:20200913T100000Z
+DTSTAMP:20200915T092809Z
+UID:059o55fdd30lc2tta5468llfq5@google.com
+CREATED:20200915T043248Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043248Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T131500Z
+DTEND:20200913T140000Z
+DTSTAMP:20200915T092809Z
+UID:5c2o44l42es0oksjjmt4assa85@google.com
+CREATED:20200915T043306Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043306Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T140000Z
+DTEND:20200913T152000Z
+DTSTAMP:20200915T092809Z
+UID:2862r3ra0bpga91uqu1itqdmf2@google.com
+CREATED:20200915T043318Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043318Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T152000Z
+DTEND:20200913T153500Z
+DTSTAMP:20200915T092809Z
+UID:54snhi0cr9lun4j6jfld03g1d1@google.com
+CREATED:20200915T043344Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043344Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T153500Z
+DTEND:20200913T161000Z
+DTSTAMP:20200915T092809Z
+UID:149im05vaiqv2lpmtrsffplc8m@google.com
+CREATED:20200915T043409Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043409Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200913T163000Z
+DTEND:20200913T233000Z
+DTSTAMP:20200915T092809Z
+UID:75sbtpnh997q7hslh0cnpemq9i@google.com
+CREATED:20200915T043425Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043425Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T011500Z
+DTEND:20200914T013000Z
+DTSTAMP:20200915T092809Z
+UID:6jc3ul5jghf41n8occkp1alj7d@google.com
+CREATED:20200915T043452Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043452Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T013000Z
+DTEND:20200914T022000Z
+DTSTAMP:20200915T092809Z
+UID:0388dcbte3e9kqe1f4jqdtu3vg@google.com
+CREATED:20200915T043505Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043517Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T022000Z
+DTEND:20200914T023000Z
+DTSTAMP:20200915T092809Z
+UID:2mbr3susgshu3pp9fhcdl83t4j@google.com
+CREATED:20200915T043531Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043541Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T023000Z
+DTEND:20200914T034000Z
+DTSTAMP:20200915T092809Z
+UID:2l8v1fgj95su26sp1j105jf4l9@google.com
+CREATED:20200915T043554Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043554Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T034000Z
+DTEND:20200914T042000Z
+DTSTAMP:20200915T092809Z
+UID:7uc85dsi3t4dd3baplr92fjk8e@google.com
+CREATED:20200915T043614Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043614Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Rest
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T042000Z
+DTEND:20200914T043500Z
+DTSTAMP:20200915T092809Z
+UID:1svapveb4i2ojm6eagavni36r8@google.com
+CREATED:20200915T043636Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043636Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T082000Z
+DTEND:20200914T092500Z
+DTSTAMP:20200915T092809Z
+UID:25tss0emufckrvkgr144v96fbr@google.com
+CREATED:20200915T043706Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043706Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T123000Z
+DTEND:20200914T133000Z
+DTSTAMP:20200915T092809Z
+UID:7n3gpge7htsarebqplvr7nlomb@google.com
+CREATED:20200915T043725Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043725Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Idle
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T133000Z
+DTEND:20200914T144000Z
+DTSTAMP:20200915T092809Z
+UID:53f0kcj0tk5q9obuvk2goa96d2@google.com
+CREATED:20200915T043735Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043735Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Work
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200914T160000Z
+DTEND:20200914T233000Z
+DTSTAMP:20200915T092809Z
+UID:1gunjfmreavuq6jf5bijlji026@google.com
+CREATED:20200915T043807Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T043807Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200910T164000Z
+DTEND:20200910T232000Z
+DTSTAMP:20200915T092809Z
+UID:7b1urduconk2haa5e119hk70e6@google.com
+CREATED:20200915T044127Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T044127Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200911T161500Z
+DTEND:20200911T233000Z
+DTSTAMP:20200915T092809Z
+UID:63krdqbkp7v6bm361h7enukr3l@google.com
+CREATED:20200915T044230Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T044230Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200912T162000Z
+DTEND:20200912T233000Z
+DTSTAMP:20200915T092809Z
+UID:6r4qptrctat7vsn8896hli9cvh@google.com
+CREATED:20200915T044321Z
+DESCRIPTION:
+LAST-MODIFIED:20200915T044321Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Sleep
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
