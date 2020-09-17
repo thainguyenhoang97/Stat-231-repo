@@ -1,0 +1,12 @@
+name: Lab04a-shiny-babynames
+title: Lab04a-shiny-babynames
+username:
+account: thainguyenhoang
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2812307
+bundleId: 3631647
+url: https://thainguyenhoang.shinyapps.io/Lab04a-shiny-babynames/
+when: 1600180401.88102
+asMultiple: FALSE
+asStatic: FALSE
