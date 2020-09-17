@@ -1,0 +1,83 @@
+---
+title: "YOUR TITLE HERE"
+subtitle: "Stat231: Google Calendar Report"
+author: "Thai Nguyen"
+date: "Due Friday, September 25 by 5:00 PM EST"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# How do I spend my time?
+
+```{r}
+# include your import of the data and preliminary wrangling here
+
+# importing data
+library(tidyverse)
+library(lubridate)
+library(ical)
+path <- "D:/Study/STAT 231 temp/Git/Stat-231-repo/Calendar assignment"
+filename <- "Test schedule.ics"
+
+my_calendar0 <- ical_parse_df(file = paste0(path,"/",filename)) %>%
+  mutate(start_datetime = with_tz(start, tzone = "America/New_York")
+    , end_datetime = with_tz(end, tzone = "America/New_York")
+    , length_hour = end_datetime - start_datetime
+    , date = floor_date(start_datetime, unit = "day"))
+```
+
+```{r}
+# initial data wrangling
+names(my_calendar0)
+my_calendar <- my_calendar0 %>%
+  filter(date > "2020-09-01") %>%
+  select(-c(uid, description, last.modified, status)) %>%
+  rename(length_minute = length_hour) %>%
+  mutate(length_hour = length_minute / 3600)
+
+```
+
+
+Describe your question(s) here.  Briefly describe your data collection process, including how you defined variables of interest.
+
+Describe what information is conveyed through data visualization #1 (that you'll create below) here.
+
+```{r}
+# Write your code to create data visualization #1 here.  
+# Be sure to label your axes and include a title to give your data's context.
+```
+
+Describe what information is conveyed through data visualization #2 (that you'll create below) here.
+
+```{r}
+# Write your code to create data visualization #2 here.  
+# Be sure to label your axes and include a title to give your data's context.
+```
+
+Describe what information is conveyed through the table (that you'll create below) here.
+
+```{r, results='asis'}
+# write your code to create the table here
+# if you want to make your table's appearance nicer, check out:
+# the xtable package (https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf); or
+# the kable function in the knitr package (https://bookdown.org/yihui/rmarkdown-cookbook/kable.html)
+```
+
+To conclude, briefly summarize what you found in response to the questions posed here.
+
+\newpage
+# Reflection
+
+Write your one-page reflection here in paragraph form.  In particular, address:
+
+- What difficulties in the data collection and analysis process did you encounter?  Identify two of your main hurdles in gathering accurate data.
+- What implications does that have for future data collection and/or analysis projects? 
+- How much data do you think you'd need to collect in order to answer your question(s) of interest? Would it be hard to collect that data? Why or why not?
+- As someone who provides data, what expectations do you have when you give your data (e.g. to Facebook, Google, MapMyRun, etc.)?  
+- As someone who analyzes others' data, what ethical responsibilities do you have?
+
+
+
