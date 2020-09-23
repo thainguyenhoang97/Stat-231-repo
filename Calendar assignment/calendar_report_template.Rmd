@@ -19,14 +19,14 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(lubridate)
 library(ical)
-path <- "D:/Study/STAT 231 temp/Git/Stat-231-repo/Calendar assignment"
+path <- "/Users/thainguyen/Desktop/STUDYYYYYYYYYYYYYYYYYYYYYY/College/Fall 2020/Data Science STAT 231/Git/Stat-231-repo/Calendar assignment"
 filename <- "Test schedule.ics"
 
 my_calendar0 <- ical_parse_df(file = paste0(path,"/",filename)) %>%
-  mutate(start_datetime = with_tz(start, tzone = "America/New_York")
-    , end_datetime = with_tz(end, tzone = "America/New_York")
-    , length_hour = end_datetime - start_datetime
-    , date = floor_date(start_datetime, unit = "day"))
+  mutate(length_second = end - start
+    , date = floor_date(start, unit = "day"))
+
+
 ```
 
 ```{r}
@@ -35,19 +35,60 @@ names(my_calendar0)
 my_calendar <- my_calendar0 %>%
   filter(date > "2020-09-01") %>%
   select(-c(uid, description, last.modified, status)) %>%
-  rename(length_minute = length_hour) %>%
-  mutate(length_hour = length_minute / 3600)
+  mutate(length_hour = as.numeric(length_second / 3600)) %>%
+  mutate(activity = summary) %>%
+  select(activity, date, length_hour) %>%
+  group_by(date, activity) %>%
+  summarise(length_hour = sum(length_hour)) 
+
+  
+  
+  
+#  pivot_wider(id_cols = summary, names_from = date, values_from = length_hour)
 
 ```
 
 
 Describe your question(s) here.  Briefly describe your data collection process, including how you defined variables of interest.
 
+In this assignment I aimed to answer 3 questions:
+\begin{enumerate}
+  \vskip 0.05in
+  \item \textbf{Did I structure my working time according to Pomodoro technique?} 
+  \vskip 0.05in
+  Firstly, the Pomodoro technique is a time management technique to help people stop procrastinating and have efficient working sessions by segmenting working hours into smaller blocks of time (called Pomodoro), with breaks in between Pomodoros in order to make sure you don't overwork. Generally, a Pomodoro is about 25 minutes, followed by a period of rest of 5 minutes, but you can combine into bigger Pomodoros and bigger rest (50 - 10, 1h15 - 15), as long as after a period of 4 Pomodoros, you will take a large break (20 minutes) to refresh yourself for the next session. \\
+  In this question, I attempt to see whether I have worked according to the Pomodoro technique. To simplify matters, I will define days meeting the criteria of Pomodoro to be days which ratio of working hours to rest hours in learning sessions is equal to 5:2 = 2.5 (As 4 Pomodoros will be 100 minutes, you have 3 small rests of 5 minutes each and one large rest of 25 minutes, total rest time is 40 minutes). \\
+  Working hours are recorded as variable \textit{Work}, and it records any kind of time that I count as working hours that are not externally structured (so class time won't count as work, as class time is scheduled by the College). \\
+  Rest hours are a bit more complicated. We have the usual \textit{Rest} that records the rest time in between Pomodoros. In additions, as I carry out the sessions, I realized the need to record down another variable, \textit{Idle}, which records down the time which I idle before beginning work. We will observe the success of the Pomodoro technique if we just consider \textit{Rest}, and then see how the results change when we add in \textit{Idle}.
+  
+  \item \textbf{Does having a class in the middle of the night affect work performance the next day?}
+  \vskip 0.05in 
+  As an international student studying remotely from Vietnam, the timezone differences are making my life rather difficult as I have to wake up in the middle of my sleep to attend classes. Even though I try to sleep immediately when the class ends and get adequate amount of sleep every night, I still feel rather groggy and distracted the next morning. In this question I will try to see if my performance is lower on days where I have classes in the middle of the night in comparison to days where I get uninterrupted sleep.
+  
+  \item \textbf{Does working harder make gymming less attractive an activity?}
+  \vskip 0.05in
+  My hypothesis is that on days where I work harder (number of work hours are higher), I will not be as motivated to do a hard work out, and instead would opt for a run. The variable \textit{Gym} records the length of the gymming session. If the session is less than an hour, it is a run; if more than an hours, it's a gymming session. I want to regress \textit{Work} against \textit{Gym} to see if this is true.
+  \end{enumerate}
+
 Describe what information is conveyed through data visualization #1 (that you'll create below) here.
 
 ```{r}
-# Write your code to create data visualization #1 here.  
-# Be sure to label your axes and include a title to give your data's context.
+my_calendar1 <- my_calendar %>%
+  filter(activity == "Idle" | activity == "Rest"|activity == "Work") %>%
+  pivot_wider(id_cols = date, names_from = activity, values_from = length_hour) %>%
+  mutate(pomo_ratio1 = Work/Rest) %>%
+  mutate(pomo_ratio2 = Work/(Rest + Idle))
+  
+
+plot1 <- my_calendar1 %>% 
+  ggplot(aes(x = date)) +
+  geom_line(aes(y = pomo_ratio1), color = "red") + 
+  geom_line(aes(y = pomo_ratio2), color = "blue") +
+  geom_hline(yintercept = 2.5, linetype = "dashed") +
+  xlab("Date") +
+  ylab("Ratio of work over rest time")
+  
+plot1
 ```
 
 Describe what information is conveyed through data visualization #2 (that you'll create below) here.
