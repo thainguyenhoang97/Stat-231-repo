@@ -1,5 +1,5 @@
 ---
-title: "YOUR TITLE HERE"
+title: "Am I resting too much? Among other things"
 subtitle: "Stat231: Google Calendar Report"
 author: "Thai Nguyen"
 date: "Due Friday, September 25 by 5:00 PM EST"
@@ -19,8 +19,10 @@ knitr::opts_chunk$set(echo = TRUE)
 library(tidyverse)
 library(lubridate)
 library(ical)
+library(xtable)
+
 path <- "/Users/thainguyen/Desktop/STUDYYYYYYYYYYYYYYYYYYYYYY/College/Fall 2020/Data Science STAT 231/Git/Stat-231-repo/Calendar assignment"
-filename <- "Test schedule.ics"
+filename <- "thhnguyen21@amherst.edu.ics"
 
 my_calendar0 <- ical_parse_df(file = paste0(path,"/",filename)) %>%
   mutate(length_second = end - start
@@ -32,19 +34,22 @@ my_calendar0 <- ical_parse_df(file = paste0(path,"/",filename)) %>%
 ```{r}
 # initial data wrangling
 names(my_calendar0)
+
 my_calendar <- my_calendar0 %>%
   filter(date > "2020-09-01") %>%
   select(-c(uid, description, last.modified, status)) %>%
+  
+  #Convert time from seconds to hours, and to numeric values for easier usage later
   mutate(length_hour = as.numeric(length_second / 3600)) %>%
   mutate(activity = summary) %>%
+  
+  #Sum total time for each activity for each day
   select(activity, date, length_hour) %>%
   group_by(date, activity) %>%
-  summarise(length_hour = sum(length_hour)) 
+  summarise(length_hour = sum(length_hour),
+  #make sure we don't get regrouped/ungrouped when we work with summarize again later          
+            .groups = "rowwise") 
 
-  
-  
-  
-#  pivot_wider(id_cols = summary, names_from = date, values_from = length_hour)
 
 ```
 
@@ -61,13 +66,13 @@ In this assignment I aimed to answer 3 questions:
   Working hours are recorded as variable \textit{Work}, and it records any kind of time that I count as working hours that are not externally structured (so class time won't count as work, as class time is scheduled by the College). \\
   Rest hours are a bit more complicated. We have the usual \textit{Rest} that records the rest time in between Pomodoros. In additions, as I carry out the sessions, I realized the need to record down another variable, \textit{Idle}, which records down the time which I idle before beginning work. We will observe the success of the Pomodoro technique if we just consider \textit{Rest}, and then see how the results change when we add in \textit{Idle}.
   
+  \item \textbf{Does working harder make gymming less attractive an activity?}
+  \vskip 0.05in
+  My hypothesis is that on days where I work harder (number of work hours are higher), I will not be as motivated to do a hard work out, and instead would opt for a run, which is shorter, or a shorter gym session. The variable \textit{Gym} records the length of the gymming/running session. I want to regress \textit{Gym} against \textit{Work} to see if this is true.
+  
   \item \textbf{Does having a class in the middle of the night affect work performance the next day?}
   \vskip 0.05in 
   As an international student studying remotely from Vietnam, the timezone differences are making my life rather difficult as I have to wake up in the middle of my sleep to attend classes. Even though I try to sleep immediately when the class ends and get adequate amount of sleep every night, I still feel rather groggy and distracted the next morning. In this question I will try to see if my performance is lower on days where I have classes in the middle of the night in comparison to days where I get uninterrupted sleep.
-  
-  \item \textbf{Does working harder make gymming less attractive an activity?}
-  \vskip 0.05in
-  My hypothesis is that on days where I work harder (number of work hours are higher), I will not be as motivated to do a hard work out, and instead would opt for a run. The variable \textit{Gym} records the length of the gymming session. If the session is less than an hour, it is a run; if more than an hours, it's a gymming session. I want to regress \textit{Work} against \textit{Gym} to see if this is true.
   \end{enumerate}
 
 Describe what information is conveyed through data visualization #1 (that you'll create below) here.
@@ -75,18 +80,38 @@ Describe what information is conveyed through data visualization #1 (that you'll
 ```{r}
 my_calendar1 <- my_calendar %>%
   filter(activity == "Idle" | activity == "Rest"|activity == "Work") %>%
+  #Widen the data to make mutating easier
   pivot_wider(id_cols = date, names_from = activity, values_from = length_hour) %>%
   mutate(pomo_ratio1 = Work/Rest) %>%
-  mutate(pomo_ratio2 = Work/(Rest + Idle))
+  mutate(pomo_ratio2 = Work/(Rest + Idle)) %>%
+  filter(!is.na(pomo_ratio1))
+
+
+
+#my_calendar1[is.na(my_calendar1)] <- 0
   
+#my_calendar1 %>%
+#  mutate(pomo_ratio1 = case_when(Rest != 0 ~ Work/Rest,
+#                                 Rest == 0 ~ NA)) %>%
+#  mutate(pomo_ratio2 = case_when(Idle != 0 ~ Work/(Rest + Idle),
+#                                 Idle == 0 ~ NA))
+
+my_calendar1 <- my_calendar1 %>%
+  select(date, pomo_ratio1, pomo_ratio2) %>%
+  #Lengthen data to make drawing bar graphs easier
+  pivot_longer(cols = c(pomo_ratio1, pomo_ratio2), names_to = "Ratio", values_to = "Value")
 
 plot1 <- my_calendar1 %>% 
-  ggplot(aes(x = date)) +
-  geom_line(aes(y = pomo_ratio1), color = "red") + 
-  geom_line(aes(y = pomo_ratio2), color = "blue") +
+  ggplot(aes(x = date, y = Value, fill = Ratio )) +
+  geom_bar(stat = "identity", position = "dodge", color = "black") +
   geom_hline(yintercept = 2.5, linetype = "dashed") +
   xlab("Date") +
-  ylab("Ratio of work over rest time")
+  ylab("Ratio of work over rest time") +
+  ggtitle("Did I follow the Pomodoro technique?",
+          "Bar graph representing work over rest time ratio by date") +
+  scale_fill_discrete(name = "Work over Rest ratio", labels = c("Without Idle time", 
+                                                                "With Idle time"))
+
   
 plot1
 ```
@@ -94,18 +119,72 @@ plot1
 Describe what information is conveyed through data visualization #2 (that you'll create below) here.
 
 ```{r}
-# Write your code to create data visualization #2 here.  
+# Write your code to create data visualization #2 here.
 # Be sure to label your axes and include a title to give your data's context.
+
+my_calendar2 <- my_calendar %>%
+  pivot_wider(id_cols = date, names_from = activity, values_from = length_hour) %>%
+  filter(!is.na(Gym))
+
+plot2 <- my_calendar2 %>% 
+  ggplot(aes(x = Work, y = Gym)) +
+  geom_point() +
+  geom_smooth(method = lm) +
+  ylab("Time spent for a gym/running session (h)") +
+  xlab("Time spent for work (h)") +
+  ggtitle("Relationship between working hours and length of gym sessions") 
+
+plot2
 ```
+In this graph, I regressed the variable \textit{Gym} against the variable \textit{Work} to see if the number of work hours is predictive of time spent gymming. By creating the scatterplot and have a best-fit line running through the data points, I can see that there is a negative correlation betweem the variables, which means that the more time I spend working, the less time I would be willing to spend in the gym or running. While this might seem to validate my hypothesis, I would also note that there are only 6 data points, which is very small for a sample size.
 
 Describe what information is conveyed through the table (that you'll create below) here.
 
 ```{r, results='asis'}
 # write your code to create the table here
-# if you want to make your table's appearance nicer, check out:
-# the xtable package (https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf); or
-# the kable function in the knitr package (https://bookdown.org/yihui/rmarkdown-cookbook/kable.html)
+my_calendar3 <- my_calendar %>%
+  pivot_wider(id_cols = date, names_from = activity, values_from = length_hour) 
+
+with_class <- my_calendar3 %>%
+  filter(!is.na(Class)) %>%
+  select(date, Idle, Rest, Work) %>%
+  mutate(total_rest = Rest + Idle) %>% 
+  summarize(Total_day = n(), 
+            avg_rest = mean(total_rest),
+            avg_work = mean(Work))
+  
+wo_class <- my_calendar3 %>%
+  filter(is.na(Class)) %>%
+  filter(!is.na(Work)) %>%
+  select(date, Idle, Rest, Work)
+
+wo_class[is.na(wo_class)] <- 0
+  
+wo_class_1 <- wo_class %>%
+  mutate(total_rest = Rest + Idle) %>%
+  summarize(Total_day = n(), 
+            avg_rest = mean(total_rest),
+            avg_work = mean(Work))
+
+wo_class_2 <- wo_class %>%
+  filter(date != "2020-09-05" & date != "2020-09-13" & 
+           date != "2020-09-19" & date != "2020-09-20") %>%
+  mutate(total_rest = Rest + Idle) %>%
+  summarize(Total_day = n(), 
+            avg_rest = mean(total_rest),
+            avg_work = mean(Work))
+
+table <- rbind(with_class, wo_class_1, wo_class_2)
+table$day_type <- c("With midnight class", "Without midnight class (with weekends)",
+                    "Without midnight class (without weekends)")
+table <- table[,c(4,1,2,3)]
+xt <- xtable(table)
+names(xt) <- c("", "Total number of days", "Average rest time (h)", "Average work time (h)")
+xt
+
 ```
+
+For this table, at first I aimed to separate my days into two groups: days which I have class from midnight to dawn, and days which I don't, and create a summary of my time spent working and time spent resting to compare the two. The results I got was rather surprising, because it seems like the average working hours for days that I don't have midnight classes was lower than for days I do. Upon closer inspection, I realized that the number was lowered because of inclusion of weekends, which I don't tend to do as much work during. By extending the table to find the averages for days without class and not in the weekends, the average working hours and rest time of days without midnight class both increases, to the same level that days with class. From the table, it seems like the midnight classes didn't affect my working hours and rest time much, in terms of averages, but it is hard to measure quality of the working hours of each day to say definitely that it didn't affect at all.
 
 To conclude, briefly summarize what you found in response to the questions posed here.
 
@@ -114,11 +193,24 @@ To conclude, briefly summarize what you found in response to the questions posed
 
 Write your one-page reflection here in paragraph form.  In particular, address:
 
-- What difficulties in the data collection and analysis process did you encounter?  Identify two of your main hurdles in gathering accurate data.
-- What implications does that have for future data collection and/or analysis projects? 
-- How much data do you think you'd need to collect in order to answer your question(s) of interest? Would it be hard to collect that data? Why or why not?
-- As someone who provides data, what expectations do you have when you give your data (e.g. to Facebook, Google, MapMyRun, etc.)?  
-- As someone who analyzes others' data, what ethical responsibilities do you have?
+\begin{enumerate}
+  \item What difficulties in the data collection and analysis process did you encounter?  Identify two of your main hurdles in gathering accurate data. 
+  \vskip 0.05in
+  There are two main issues that I encountered. The first issue was that sometimes certain data is not enough for you to answer a question most precisely. For my first question on Pomodoro technique, only a few days into the data recording did I realize that recording rest time is not enough, because I was also doing a lot of idling. I was lucky enough to recognize this earlier on so I had time to input \textit{Idle} into the calendar. \\
+  The second issue arose when I analyzed the data. I realized that the way the \textit{Rest} variable was recorded makes it difficult to calculate a precise ratio for work over rest time, because some work sessions led to other activities like sleep or a meal, which is technically a rest, but is not recorded as \textit{Rest} because it is not part of the Pomodoro technique. \\
+
+
+  \item What implications does that have for future data collection and/or analysis projects?
+  \vskip 0.05in
+  
+  
+  \item How much data do you think you'd need to collect in order to answer your question(s) of interest? Would it be hard to collect that data? Why or why not?
+  
+  \item As someone who provides data, what expectations do you have when you give your data (e.g. to Facebook, Google, MapMyRun, etc.)?  
+  
+  \item As someone who analyzes others' data, what ethical responsibilities do you have?
+
+\end{enumerate}
 
 
 
