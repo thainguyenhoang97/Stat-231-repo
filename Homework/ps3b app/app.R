@@ -65,18 +65,29 @@ server <- function(input, output, session) {
     filter(mad_men2, show == input$x)
   })
   
-  use_data2 <- reactive({
+  use_data2 <-  eventReactive(input$button, {
     filter(mad_men2, show == input$x & performer == input$y)
   })
+  
+  # define text as a reactive event only 
+  # to be updated if the action button is pressed
+  update_text <- eventReactive(input$button, {
+    paste("Since", input$y, use_data2()$status, "his/her role in", 
+          input$x, use_data2()$years_since, "years ago, he/she has appeared as a lead in",
+          use_data2()$num_lead, "show(s),")
+  })
  
+  update_text1 <- eventReactive(input$button, {
+    paste("as support in", use_data2()$num_support,
+          "show(s), and played an integral part in", use_data2()$num_shows, "show(s).")
+  })
+  
    observe({
      updateSelectInput(session, inputId = "y"
                        , label = paste("Choose a performer from", input$x)
                        , choices = mad_men2[mad_men2$show==input$x, "performer"]
                        )
    })
-   
-   observeEvent(input$x, {input$button == 0})
    
   output$table1 <- renderTable({
     use_data1() %>%
@@ -86,14 +97,11 @@ server <- function(input, output, session) {
     )
   
   output$text <- renderText({
-    paste("Since", input$y, use_data2()$status, "his/her role in", 
-          input$x, use_data2()$years_since, "years ago, he/she has appeared as a lead in",
-          use_data2()$num_lead, "show(s),")
+    update_text()
   })
   
   output$text1 <- renderText({
-    paste("as support in", use_data2()$num_support,
-          "show(s), and played an integral part in", use_data2()$num_shows, "show(s).")
+    update_text1()
   }
     
   )
