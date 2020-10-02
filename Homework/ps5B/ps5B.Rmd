@@ -92,7 +92,7 @@ c. Load `justices.csv` into this file using the `read_csv` function.  Then, run 
 
 Create a visualization to show the distribution of tenure length of U.S. Supreme Court judges.  Interpret the plot.
 
-> ANSWER:   
+> ANSWER: The histogram shows us that tenure length varies from 0 to more than 30 years, with median tenure of 6 to 7 years and 15 to 16 years, and no justices serve 11-12 years, 25-26 years or 28-29 years.
 
 ```{r}
 justices <- read_csv("/Users/thainguyen/Desktop/STUDYYYYYYYYYYYYYYYYYYYYYY/College/Fall 2020/Data Science STAT 231/Git/Stat-231-repo/Homework/ps5B/justices.csv")
@@ -113,7 +113,12 @@ justices2 <- justices %>%
            , sep = "\\(") %>%
   mutate(date_confirmed = lubridate::mdy(date_confirmed_vote))
 
+plot <- ggplot(justices2) +
+  geom_histogram(aes(x=tenure_length), binwidth = 1) +
+  xlab("Length of tenure in years") +
+  ggtitle("Distribution of tenure length")
 
+plot
 
 ```
 
@@ -172,7 +177,23 @@ Go to BrainyQuote.com and search a different topic (or search an Author) that in
 
 ```{r, eval = FALSE}
 ## Add your code that is in quotes.R to this code chunk.  KEEP the "eval=FALSE" option in this code chunk option, as you do NOT want to evaluate it (which would re-scrape the website everytime you knit this file).  (We do want the grader to be able to see the code, though, as you'll only submit this one knit PDF to Gradescope.)
+quotes_html_2 <- read_html("https://www.brainyquote.com/authors/albert-camus-quotes")
 
+quotes2 <- quotes_html_2 %>%
+  html_nodes(".oncl_q") %>%
+  html_text()
+
+person2 <- quotes_html_2 %>%
+  html_nodes(".oncl_a") %>%
+  html_text()
+
+# put in data frame with two variables (person and quote)
+quotes_dat_2 <- data.frame(person = person2, quote = quotes2
+                         , stringsAsFactors = FALSE) %>%
+  mutate(together = paste('"', as.character(quote), '" --'
+                          , as.character(person), sep=""))
+
+write_csv(quotes_dat_2, "/Users/thainguyen/Desktop/STUDYYYYYYYYYYYYYYYYYYYYYY/College/Fall 2020/Data Science STAT 231/Git/Stat-231-repo/Homework/ps5B/quotes.csv")
 
 ```
 
@@ -181,7 +202,11 @@ Go to BrainyQuote.com and search a different topic (or search an Author) that in
 c. Load `quotes.csv` into this file using the `read_csv` function.  Write code to select *three* of the quotes at random and print them (i.e., set `size = 3` in the `sample` function).
 
 ```{r, linewidth = 60}
+quotes_camus <- read_csv("/Users/thainguyen/Desktop/STUDYYYYYYYYYYYYYYYYYYYYYY/College/Fall 2020/Data Science STAT 231/Git/Stat-231-repo/Homework/ps5B/quotes.csv")
 
+quote_for_the_day_2 <- quotes_camus[sample(1:nrow(quotes_camus), size = 3),]
+
+quote_for_the_day_2$together
 ```
 
 
