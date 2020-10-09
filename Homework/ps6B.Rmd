@@ -111,11 +111,56 @@ tweets2 <- tweets %>%
 
 Don't forget to remove stop words before creating the word cloud.  Also remove the terms "https" and "t.co".
 
-> ANSWER:  
+> ANSWER:  It seems like the most common words are slightly different between the two sources. The most common ones from Android are "realdonaldtrump", "hillary" and "trump", with most common adjective being "crooked". The frequency of the most common words in this set is also closer to one another. For the iPhone map, the most common ones are "makeamericagreatagain" and "trump2016", both of which seems to relate more to campaign slogans. "crooked" is still there, just in a much lower frequency. 
 
 ```{r, fig.width=8, fig.height=8}
+pal <- brewer.pal(10, "Paired")
 
+#create word frequencies for Android
+word_frequencies_and <- tweets2 %>%
+  filter(source == "Android") %>%
+  unnest_tokens(output = word, input = text) %>%
+  anti_join(stop_words, by = "word") %>%
+  filter(word != "https") %>%
+  filter(word != "t.co") %>%
+  count(word, sort = TRUE)
 
+#create wordcloud for Android
+wordcloud(word_frequencies_and$word, word_frequencies_and$n
+          , max.words=50
+          # plot the words in a random order
+          , random.order=T
+          # specify proportion of words with 90 degree rotation
+          , rot.per=.15
+          # specify the range of the size of the words
+          , scale=c(8,0.3)
+          # colors words from least to most frequent
+          , colors = pal
+          # font family
+          , family="sans")
+
+#create word frequencies for iPhone
+word_frequencies_iph <- tweets2 %>%
+  filter(source == "iPhone") %>%
+  unnest_tokens(output = word, input = text) %>%
+  anti_join(stop_words, by = "word") %>%
+  filter(word != "https") %>%
+  filter(word != "t.co") %>%
+  count(word, sort = TRUE)
+
+#create wordcloud for Android
+wordcloud(word_frequencies_iph$word, word_frequencies_iph$n
+          , max.words=50
+          # plot the words in a random order
+          , random.order=T
+          # specify proportion of words with 90 degree rotation
+          , rot.per=.15
+          # specify the range of the size of the words
+          , scale=c(8,0.3)
+          # colors words from least to most frequent
+          , colors = pal
+          # font family
+          , family="sans")
 ```
 
 \newpage
