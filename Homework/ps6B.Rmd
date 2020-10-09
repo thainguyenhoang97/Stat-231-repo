@@ -171,16 +171,106 @@ How do the top used bigrams compare between the two sources?
 > ANSWER:  
 
 ```{r}
+#create dataset for bigrams
+tweets_bigrams <- tweets2 %>%
+  unnest_tokens(output = word, input = text
+                , token = "ngrams", n = 2) %>%
+  #remove stop words by separating and comparing
+  separate(col = word , into = c("word1", "word2"), sep = " ", remove = FALSE) %>%
+  anti_join(stop_words, by = c("word1" = "word")) %>%
+  anti_join(stop_words, by = c("word2" = "word")) %>%
+  filter(word1 != "https", word2 != "https") %>%
+  filter(word != "t.co" , word2 != "t.co") 
 
+#create visualization
+tweets_bigrams %>%
+  group_by(source) %>%
+  count(word, sort = TRUE) %>% 
+  slice(1:10) %>%
+  ggplot(aes(x = reorder(word,n), y = n, color = word, fill=word)) +
+  geom_col() +
+  xlab(NULL) +
+  coord_flip() +
+  facet_wrap(~source, nrow = 1, scales = "free") +
+  labs(y = "Number of instances"
+       , title="The most common bigrams in Trump's tweets by source of Android of iPhone") +
+  guides(color = "none", fill = "none")
+
+
+    
+  
 ```
 
 
 \newpage
 2c. Consider the sentiment.  Compute the proportion of words among the tweets within each source classified as "angry" and the proportion of words classified as "joy"  based on the NRC lexicon.  How does the proportion of "angry" and "joy" words compare between the two sources?  What about "positive" and "negative" words?  
 
-> ANSWER: 
+> ANSWER: From iphone, the proportion of "angry" and "joy" word is 1.78% and 1.28% of the words respectively, while from android, that is 1.52% and 1.11% respectively. From iphone, the proportion of "negative" and "positive" word is 2.61% and 2.08% respectively, while from android, that is 2.93% and 1.90% respectively. 
 
 ```{r}
+nrc_lexicon <- get_sentiments("nrc")
+afinn_lexicon <- get_sentiments("afinn")
+
+#Get the total number of words in iphone and android
+word_frequencies_iph %>%
+  summarize(total = sum(n))
+#total = 4605
+
+word_frequencies_and %>%
+  summarize(total = sum(n))
+#total = 6958
+
+#Calculate proportion of "joy" and "anger"
+#For iphone
+sent_iph_nrc <- word_frequencies_iph %>%
+  left_join(nrc_lexicon, "word") %>%
+  filter(sentiment == "anger" | sentiment == "joy") 
+
+sent_iph_nrc %>%
+  group_by(sentiment) %>%
+  summarize(prop = n()/4605)
+
+#For android
+sent_and_nrc <- word_frequencies_and %>%
+  left_join(nrc_lexicon, "word") %>%
+  filter(sentiment == "anger" | sentiment == "joy")
+
+sent_and_nrc %>%
+  group_by(sentiment) %>%
+  summarize(prop = n()/6958)
+
+#Calculate proportion of "positive" and "negative" 
+#For iphone
+sent_iph_afinn <- word_frequencies_iph %>%
+  left_join(afinn_lexicon, "word") %>%
+  filter(!is.na(value)) %>%
+  mutate(sentiment = case_when(value > 0 ~ "positive",
+                               value < 0 ~ "negative")) 
+
+sent_iph_afinn %>%
+  group_by(sentiment) %>%
+  summarize(prop = n()/4605)
+
+#For android
+sent_and_afinn <- word_frequencies_and %>%
+  left_join(afinn_lexicon, "word") %>%
+  filter(!is.na(value)) %>%
+  mutate(sentiment = case_when(value > 0 ~ "positive",
+                               value < 0 ~ "negative")) 
+
+sent_and_afinn %>%
+  group_by(sentiment) %>%
+  summarize(prop = n()/6958)
+
+#For 2d
+sent_iph_afinn %>% 
+  mutate(total = n*value) %>%
+  summarize(overall = sum(total))
+
+sent_and_afinn %>% 
+  mutate(total = n*value) %>%
+  summarize(overall = sum(total))
+
 
 
 ```
@@ -189,5 +279,7 @@ How do the top used bigrams compare between the two sources?
 \newpage
 2d. Lastly, based on your responses above, do you think there is evidence to support Robinson's claim that Trump only writes the (angrier) Android half of the tweets from realDonaldTrump?  In 2-4 sentences, please explain.
 
-> ANSWER: 
+> ANSWER: It might not be true that Trump only writes the Android half, based on text analysis of sentiments. As we can see from above, in both iPhone and Android sources, the words that connotates anger and negative sentiments constitute a larger proportion, which means that from both sources the words seem to convey more anger than joy, more negative than positive. 
+
+However, the last part of the R code above used the AFINN lexicon to calculate the total sentiments in terms of positive and negative values, and it turns out that the overall sentiment values of words from iPhone source is positive (131) while from the Android source is negative (-116), which indicates that maybe there is a greater degree of negative sentiments/hatred conveyed in the Android source. 
 
