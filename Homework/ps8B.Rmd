@@ -99,10 +99,39 @@ Note: While I recommend using one of the datasets provided in the lab so you don
 
 Describe one challenge you encountered (if any) while creating this map.
 
-> ANSWER: 
+> ANSWER: Amidst the hype of the election this year, I was interested in seeing the Trump's voter proportion by state, to visualize what the situation was in last election. It seems like it is the same as what we are seeing this year, with states in the the Midwest and Southeast states having a high proportion of Trump voters, while Western states and the Northeast ones were more democratic and have a lower Trump voters' proportion. One small challenge while creating this map is to join dataset, but this was still relatively simple. 
 
 
 ```{r}
+library(fivethirtyeight)
+
+# Prepare the necessary datasets
+hate_crime_data <- hate_crimes
+
+data(state) 
+
+# creates a data frame with state info
+state_info <- data.frame(state_full = tolower(state.name)
+                         , State = state.abb
+                         , Region = state.region)
+
+usa_states <-  map_data(map = "state"
+                       , region = ".") 
+
+# Join the data
+trump_map <- hate_crime_data %>%
+  left_join(state_info, by = c("state_abbrev" = "State")) %>%
+  right_join(usa_states, by = c("state_full" = "region"))
+
+ggplot(trump_map, aes(x = long, y = lat, group = group
+                      , fill = share_vote_trump)) +
+  geom_polygon(color = "white") +
+  theme_void() +
+  coord_fixed(ratio = 1.3) +
+  labs(title = "Share of Trump voters as proportion of all voters, by State"
+       , subtitle = "in the 2016 election"
+       , fill = "") +
+  scale_fill_viridis(option = "magma", direction = -1) 
 
 ```
 
@@ -113,11 +142,11 @@ Describe one challenge you encountered (if any) while creating this map.
 
 (a) Thinking about the discussion you had with the first group you were with during class last Thursday (focused on either "Predicting Policing & Recidivism" or "Predicting Financial Risk"), did your perspective on, or understanding of, any of the questions shift?  If so, please describe.  If not, was there anything you found surprising in the resources or your first group discussion?
 
-> ANSWER: 
+> ANSWER: After the discussion, I think there is a shift in my perspective in terms of weighing the usefulness of using machine learning for predictive crime fighting and the potential bias reinforcement that it has. Before, I still believe strongly that technology can be very useful in crime detection, with facial recognition being so ubiquitous in urban centers today. However, after the discussion, as well as watching the videos, I understood that algorithms to detect crime might be severely biased based on the person coding it, as well as the training set it was applied (in case of machine learning), and there is no easy solution because this bias has to be tackled in education since early on, otherwise it will be carried by coders into their algorithms and affect the precision of policing criminals, leading to further bias against different racial groups.
 
 (b) Thinking about the discussion you had with the second group you were with during class last Thursday (focused on considering the use of algorithms in the college admissions processs), did your perspective on, or understanding of, the use of algorithms in these contexts shift?  If not, was there anything you found surprising in the resources or your second group discussion?
 
-> ANSWER: 
+> ANSWER: Once again, my perspective changes a bit after our discussion here. The discussion of fairness came up again because we were thinking about how it would be "unfair" for our 4 years of college to be determined by a code, written by someone who might have an inherent bias. I like how we discussed about the court and our legal system, which dealt which issues of fairness again and requires human consideration because at the core, fairness is a human quality. As such, even though we agree that we can use technology to a certain extent to create rankings based on a weighted evaluations of our various standardized scores, it is hard to judge holistically a student based on algorithms because it cannot capture the different nuances that may present, for example, in our college application essay and other non-quantitative information. 
 
 
 
